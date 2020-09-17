@@ -24,7 +24,7 @@ class Student
     DB[:conn].execute(sql) 
   end
   
-  def self.drop_table
+  def self.drop_table(student)
      sql = <<-SQL 
       DROP TABLE students (
         id INTEGER PRIMARY KEY, 
